@@ -1,0 +1,6 @@
+framework module Pods_TestCapgeminiMobileFactory2020MVC {
+  umbrella header "Pods-TestCapgeminiMobileFactory2020MVC-umbrella.h"
+
+  export *
+  module * { export * }
+}
