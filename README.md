@@ -5,11 +5,11 @@
 - [Introduction](#introduction)
 - [Sujet](#subject)
 - [Ma solution](#mysolution)
-    + [Architecture MVC]()
-    + [Architecture MVVM]()
-    + [Architecture MVP]()
-    + [Architecture VIPER]()
-    + [Clean Architecture (VIP): Clean Swift]()
+    + [Architecture MVC](https://github.com/Kous92/Test-technique-iOS-2020-Capgemini-Mobile-Factory-DCX-Paris/tree/main/MVC)
+    + [Architecture MVVM](https://github.com/Kous92/Test-technique-iOS-2020-Capgemini-Mobile-Factory-DCX-Paris/tree/main/MVVM)
+    + [Architecture MVP](https://github.com/Kous92/Test-technique-iOS-2020-Capgemini-Mobile-Factory-DCX-Paris/tree/main/MVP)
+    + [Architecture VIPER](https://github.com/Kous92/Test-technique-iOS-2020-Capgemini-Mobile-Factory-DCX-Paris/tree/main/VIPER)
+    + [Clean Architecture (VIP): Clean Swift](https://github.com/Kous92/Test-technique-iOS-2020-Capgemini-Mobile-Factory-DCX-Paris/tree/main/Clean%20Swift)
     
 
 ## <a name="introduction"></a>Introduction
@@ -24,7 +24,7 @@ Je n'avais fait ce test qu'avec l'architecture **MVC** à l'époque. L'architect
 
 Pour information, c'est aussi de ce test technique que j'ai eu l'inspiration de mon projet personnel qu'est [SuperNews](https://github.com/Kous92/SuperNews-iOS-Swift5).
 
-Aujourd'hui en 2023, avec le recul et tout ce que j'ai appris, je vous montre maintenant mes différentes implémentations avec les architectures qu'on utilise en iOS, ici **MVC**, **MVVM**, **MVP** et **Clean (ici Clean Swift)**. Le tout avec une analyse qui prend en compte des principes du **software craftsmanship**: **SOLID**, principes de Clean Code (**KISS**, **DRY**, **YAGNI**, ...)
+Aujourd'hui en 2023, avec le recul et tout ce que j'ai appris, je vous montre maintenant mes différentes implémentations avec les architectures qu'on utilise en iOS, ici **MVC**, **MVVM**, **MVP**, **VIPER** et **Clean (ici Clean Swift)**. Le tout avec une analyse qui prend en compte des principes du **software craftsmanship**: **SOLID**, principes de Clean Code (**KISS**, **DRY**, **YAGNI**, ...)
 
 J'invite tout développeur iOS junior et débutant à s'exercer en effectuant ce test. Pour les implémentations d'architectures, je vous recommande de cheminer comme ceci:
 1) MVC
