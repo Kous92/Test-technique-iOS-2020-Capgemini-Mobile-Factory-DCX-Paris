@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07CF6C63A90192123C5EFBA3 /* Pods_TestCapgeminiMobileFactory2020MVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33F15DAF0AF6D829127902D1 /* Pods_TestCapgeminiMobileFactory2020MVVM.framework */; };
+		4B177D582994FE0600F775E6 /* NewsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B177D572994FE0600F775E6 /* NewsListViewModel.swift */; };
+		4B177D5B2995462A00F775E6 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B177D5A2995462A00F775E6 /* ImageLoader.swift */; };
+		4B177D5D299549AD00F775E6 /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B177D5C299549AD00F775E6 /* ArticleViewModel.swift */; };
+		4B18A1B22994FAC3009A8D31 /* NewsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B18A1B12994FAC3009A8D31 /* NewsDetailViewController.swift */; };
+		4B18A1B52994FAF0009A8D31 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B18A1B32994FAF0009A8D31 /* Article.swift */; };
+		4B18A1B62994FAF0009A8D31 /* StringToDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B18A1B42994FAF0009A8D31 /* StringToDate.swift */; };
+		4BDFF05D2993F91F004F42C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDFF05C2993F91F004F42C5 /* AppDelegate.swift */; };
+		4BDFF05F2993F91F004F42C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDFF05E2993F91F004F42C5 /* SceneDelegate.swift */; };
+		4BDFF0612993F91F004F42C5 /* NewsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDFF0602993F91F004F42C5 /* NewsListViewController.swift */; };
+		4BDFF0642993F91F004F42C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BDFF0622993F91F004F42C5 /* Main.storyboard */; };
+		4BDFF0662993F91F004F42C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BDFF0652993F91F004F42C5 /* Assets.xcassets */; };
+		4BDFF0692993F91F004F42C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BDFF0672993F91F004F42C5 /* LaunchScreen.storyboard */; };
+		4BDFF0992993FC4D004F42C5 /* NewsAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDFF0962993FC4D004F42C5 /* NewsAPIError.swift */; };
+		4BDFF09A2993FC4D004F42C5 /* NewsAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDFF0972993FC4D004F42C5 /* NewsAPIService.swift */; };
+		4BDFF09B2993FC4D004F42C5 /* NewsAPIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDFF0982993FC4D004F42C5 /* NewsAPIEndpoint.swift */; };
+		4BDFF09D2993FC65004F42C5 /* NewsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDFF09C2993FC65004F42C5 /* NewsListTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		33F15DAF0AF6D829127902D1 /* Pods_TestCapgeminiMobileFactory2020MVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestCapgeminiMobileFactory2020MVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48AE5BC5E60FF3127C9F2227 /* Pods-TestCapgeminiMobileFactory2020MVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCapgeminiMobileFactory2020MVVM.release.xcconfig"; path = "Target Support Files/Pods-TestCapgeminiMobileFactory2020MVVM/Pods-TestCapgeminiMobileFactory2020MVVM.release.xcconfig"; sourceTree = "<group>"; };
+		4B177D572994FE0600F775E6 /* NewsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListViewModel.swift; sourceTree = "<group>"; };
+		4B177D5A2995462A00F775E6 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		4B177D5C299549AD00F775E6 /* ArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
+		4B18A1B12994FAC3009A8D31 /* NewsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailViewController.swift; sourceTree = "<group>"; };
+		4B18A1B32994FAF0009A8D31 /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Article.swift; path = ../../../../MVC/TestCapgeminiMobileFactory2020MVC/TestCapgeminiMobileFactory2020MVC/Model/Article.swift; sourceTree = "<group>"; };
+		4B18A1B42994FAF0009A8D31 /* StringToDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringToDate.swift; sourceTree = "<group>"; };
+		4BDFF0592993F91F004F42C5 /* TestCapgeminiMobileFactory2020MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestCapgeminiMobileFactory2020MVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BDFF05C2993F91F004F42C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4BDFF05E2993F91F004F42C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4BDFF0602993F91F004F42C5 /* NewsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListViewController.swift; sourceTree = "<group>"; };
+		4BDFF0632993F91F004F42C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4BDFF0652993F91F004F42C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4BDFF0682993F91F004F42C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4BDFF06A2993F91F004F42C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BDFF0962993FC4D004F42C5 /* NewsAPIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewsAPIError.swift; path = ../../../../MVC/TestCapgeminiMobileFactory2020MVC/TestCapgeminiMobileFactory2020MVC/Service/NewsAPIError.swift; sourceTree = "<group>"; };
+		4BDFF0972993FC4D004F42C5 /* NewsAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewsAPIService.swift; path = ../../../../MVC/TestCapgeminiMobileFactory2020MVC/TestCapgeminiMobileFactory2020MVC/Service/NewsAPIService.swift; sourceTree = "<group>"; };
+		4BDFF0982993FC4D004F42C5 /* NewsAPIEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewsAPIEndpoint.swift; path = ../../../../MVC/TestCapgeminiMobileFactory2020MVC/TestCapgeminiMobileFactory2020MVC/Service/NewsAPIEndpoint.swift; sourceTree = "<group>"; };
+		4BDFF09C2993FC65004F42C5 /* NewsListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListTableViewCell.swift; sourceTree = "<group>"; };
+		7B068979E783C67292DE49BF /* Pods-TestCapgeminiMobileFactory2020MVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCapgeminiMobileFactory2020MVVM.debug.xcconfig"; path = "Target Support Files/Pods-TestCapgeminiMobileFactory2020MVVM/Pods-TestCapgeminiMobileFactory2020MVVM.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4BDFF0562993F91F004F42C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07CF6C63A90192123C5EFBA3 /* Pods_TestCapgeminiMobileFactory2020MVVM.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B177D592995460A00F775E6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4B177D5A2995462A00F775E6 /* ImageLoader.swift */,
+				4B18A1B42994FAF0009A8D31 /* StringToDate.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4BDFF0502993F91F004F42C5 = {
+			isa = PBXGroup;
+			children = (
+				4BDFF05B2993F91F004F42C5 /* TestCapgeminiMobileFactory2020MVVM */,
+				4BDFF05A2993F91F004F42C5 /* Products */,
+				F729FD9F0E7824B22CB4A6B1 /* Pods */,
+				C276DB6FA00817AA0E34CC35 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4BDFF05A2993F91F004F42C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4BDFF0592993F91F004F42C5 /* TestCapgeminiMobileFactory2020MVVM.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4BDFF05B2993F91F004F42C5 /* TestCapgeminiMobileFactory2020MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				4B177D592995460A00F775E6 /* Extensions */,
+				4BDFF0952993F9C7004F42C5 /* Model */,
+				4BDFF0942993F9C1004F42C5 /* Service */,
+				4BDFF0932993F9BD004F42C5 /* List */,
+				4BDFF0922993F9B5004F42C5 /* Detail */,
+				4BDFF05C2993F91F004F42C5 /* AppDelegate.swift */,
+				4BDFF05E2993F91F004F42C5 /* SceneDelegate.swift */,
+				4BDFF0622993F91F004F42C5 /* Main.storyboard */,
+				4BDFF0652993F91F004F42C5 /* Assets.xcassets */,
+				4BDFF0672993F91F004F42C5 /* LaunchScreen.storyboard */,
+				4BDFF06A2993F91F004F42C5 /* Info.plist */,
+			);
+			path = TestCapgeminiMobileFactory2020MVVM;
+			sourceTree = "<group>";
+		};
+		4BDFF0922993F9B5004F42C5 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				4B18A1B12994FAC3009A8D31 /* NewsDetailViewController.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		4BDFF0932993F9BD004F42C5 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				4BDFF0602993F91F004F42C5 /* NewsListViewController.swift */,
+				4BDFF09C2993FC65004F42C5 /* NewsListTableViewCell.swift */,
+				4B177D572994FE0600F775E6 /* NewsListViewModel.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		4BDFF0942993F9C1004F42C5 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				4BDFF0982993FC4D004F42C5 /* NewsAPIEndpoint.swift */,
+				4BDFF0962993FC4D004F42C5 /* NewsAPIError.swift */,
+				4BDFF0972993FC4D004F42C5 /* NewsAPIService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		4BDFF0952993F9C7004F42C5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4B18A1B32994FAF0009A8D31 /* Article.swift */,
+				4B177D5C299549AD00F775E6 /* ArticleViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C276DB6FA00817AA0E34CC35 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				33F15DAF0AF6D829127902D1 /* Pods_TestCapgeminiMobileFactory2020MVVM.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F729FD9F0E7824B22CB4A6B1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B068979E783C67292DE49BF /* Pods-TestCapgeminiMobileFactory2020MVVM.debug.xcconfig */,
+				48AE5BC5E60FF3127C9F2227 /* Pods-TestCapgeminiMobileFactory2020MVVM.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4BDFF0582993F91F004F42C5 /* TestCapgeminiMobileFactory2020MVVM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BDFF06D2993F91F004F42C5 /* Build configuration list for PBXNativeTarget "TestCapgeminiMobileFactory2020MVVM" */;
+			buildPhases = (
+				E4DD239AC9B1967D7244614A /* [CP] Check Pods Manifest.lock */,
+				4BDFF0552993F91F004F42C5 /* Sources */,
+				4BDFF0562993F91F004F42C5 /* Frameworks */,
+				4BDFF0572993F91F004F42C5 /* Resources */,
+				88C6953BDCAAA1C559840CEF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestCapgeminiMobileFactory2020MVVM;
+			productName = TestCapgeminiMobileFactory2020MVVM;
+			productReference = 4BDFF0592993F91F004F42C5 /* TestCapgeminiMobileFactory2020MVVM.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4BDFF0512993F91F004F42C5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					4BDFF0582993F91F004F42C5 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 4BDFF0542993F91F004F42C5 /* Build configuration list for PBXProject "TestCapgeminiMobileFactory2020MVVM" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4BDFF0502993F91F004F42C5;
+			productRefGroup = 4BDFF05A2993F91F004F42C5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4BDFF0582993F91F004F42C5 /* TestCapgeminiMobileFactory2020MVVM */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4BDFF0572993F91F004F42C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BDFF0692993F91F004F42C5 /* LaunchScreen.storyboard in Resources */,
+				4BDFF0662993F91F004F42C5 /* Assets.xcassets in Resources */,
+				4BDFF0642993F91F004F42C5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		88C6953BDCAAA1C559840CEF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestCapgeminiMobileFactory2020MVVM/Pods-TestCapgeminiMobileFactory2020MVVM-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestCapgeminiMobileFactory2020MVVM/Pods-TestCapgeminiMobileFactory2020MVVM-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestCapgeminiMobileFactory2020MVVM/Pods-TestCapgeminiMobileFactory2020MVVM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4DD239AC9B1967D7244614A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestCapgeminiMobileFactory2020MVVM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4BDFF0552993F91F004F42C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B177D582994FE0600F775E6 /* NewsListViewModel.swift in Sources */,
+				4B18A1B22994FAC3009A8D31 /* NewsDetailViewController.swift in Sources */,
+				4B177D5D299549AD00F775E6 /* ArticleViewModel.swift in Sources */,
+				4B177D5B2995462A00F775E6 /* ImageLoader.swift in Sources */,
+				4B18A1B62994FAF0009A8D31 /* StringToDate.swift in Sources */,
+				4BDFF0612993F91F004F42C5 /* NewsListViewController.swift in Sources */,
+				4B18A1B52994FAF0009A8D31 /* Article.swift in Sources */,
+				4BDFF05D2993F91F004F42C5 /* AppDelegate.swift in Sources */,
+				4BDFF0992993FC4D004F42C5 /* NewsAPIError.swift in Sources */,
+				4BDFF09A2993FC4D004F42C5 /* NewsAPIService.swift in Sources */,
+				4BDFF09B2993FC4D004F42C5 /* NewsAPIEndpoint.swift in Sources */,
+				4BDFF09D2993FC65004F42C5 /* NewsListTableViewCell.swift in Sources */,
+				4BDFF05F2993F91F004F42C5 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4BDFF0622993F91F004F42C5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4BDFF0632993F91F004F42C5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4BDFF0672993F91F004F42C5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4BDFF0682993F91F004F42C5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4BDFF06B2993F91F004F42C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4BDFF06C2993F91F004F42C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4BDFF06E2993F91F004F42C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B068979E783C67292DE49BF /* Pods-TestCapgeminiMobileFactory2020MVVM.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LX6HN92HPR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TestCapgeminiMobileFactory2020MVVM/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kous92.TestCapgeminiMobileFactory2020MVVM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4BDFF06F2993F91F004F42C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48AE5BC5E60FF3127C9F2227 /* Pods-TestCapgeminiMobileFactory2020MVVM.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LX6HN92HPR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TestCapgeminiMobileFactory2020MVVM/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kous92.TestCapgeminiMobileFactory2020MVVM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4BDFF0542993F91F004F42C5 /* Build configuration list for PBXProject "TestCapgeminiMobileFactory2020MVVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BDFF06B2993F91F004F42C5 /* Debug */,
+				4BDFF06C2993F91F004F42C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BDFF06D2993F91F004F42C5 /* Build configuration list for PBXNativeTarget "TestCapgeminiMobileFactory2020MVVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BDFF06E2993F91F004F42C5 /* Debug */,
+				4BDFF06F2993F91F004F42C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4BDFF0512993F91F004F42C5 /* Project object */;
+}
