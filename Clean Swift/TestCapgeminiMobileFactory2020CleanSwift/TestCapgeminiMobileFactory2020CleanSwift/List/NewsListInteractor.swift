@@ -7,7 +7,7 @@
 
 import Foundation
 
-class NewsListInteractor: NewsListDataStore {
+final class NewsListInteractor: NewsListDataStore {
     var articles: [Article] = []
     
     // Référence vers le Worker pour le call API
@@ -16,6 +16,7 @@ class NewsListInteractor: NewsListDataStore {
     // Notifier le Presenter avec les méthodes déléguées
     var presenter: NewsListPresentationLogic?
     
+    // Grâce à une injection de dépendance par le biais d'un type abstrait, la testabilité sera assurée si on utilise un mock pour le worker.
     init(with apiService: NewsAPIService) {
         self.worker = NewsListWorker(apiService: apiService)
     }

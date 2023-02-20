@@ -1,6 +1,18 @@
 # Test technique iOS 2020 - Capgemini (Mobile Factory, DCX, Paris)
 
-## Introduction
+## Plan de navigation
+
+- [Introduction](#introduction)
+- [Sujet](#subject)
+- [Ma solution](#mysolution)
+    + [Architecture MVC]()
+    + [Architecture MVVM]()
+    + [Architecture MVP]()
+    + [Architecture VIPER]()
+    + [Clean Architecture (VIP): Clean Swift]()
+    
+
+## <a name="introduction"></a>Introduction
 
 Ici un test technique que j'ai réalisé lors de mon stage de fin d'études en 2020, au sein de Capgemini, à Paris, plus précisément à Issy-les-Moulineaux. 
 
@@ -23,7 +35,7 @@ J'invite tout développeur iOS junior et débutant à s'exercer en effectuant ce
 
 Voici le sujet ci-dessous.
 
-## Sujet
+## <a name="subject"></a>Sujet
 
 Développer une application qui consomme l’API News en affichant les articles dans une `tableView`. Au clic sur un article, l’article est affiché (`push`) dans un nouvel écran (voir maquettes ci-dessous).
 
@@ -57,7 +69,7 @@ Vue principale (obligatoire) et vue détail (facultative)
 
 <img src="ListView.png" width="250"> <img src="DetailView.png" width="250">
 
-## Ma solution
+## <a name="mysolution"></a>Ma solution (au niveau commun)
 
 **Ici, les éléments communs à toutes les implémentations d'architectures.**
 

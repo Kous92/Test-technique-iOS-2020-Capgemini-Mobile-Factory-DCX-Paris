@@ -12,7 +12,7 @@
 
 import UIKit
 
-class NewsDetailViewController: UIViewController {
+final class NewsDetailViewController: UIViewController {
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var articleImageView: UIImageView!

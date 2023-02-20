@@ -7,7 +7,7 @@
 
 import Foundation
 
-class NewsListPresenter {
+final class NewsListPresenter {
     /* Référence vers le ViewController qui l'utilise. Faible car il y a un cycle de références (indirect):
     - ViewController -> Interactor -> Presenter -> ViewController (Cycle VIP, unidirectionnel)
     - Même indirect, risque de memory leak si la vue est détruite.

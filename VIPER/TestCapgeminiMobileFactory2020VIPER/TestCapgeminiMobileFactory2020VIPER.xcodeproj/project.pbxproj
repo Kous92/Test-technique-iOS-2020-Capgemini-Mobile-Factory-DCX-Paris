@@ -12,8 +12,8 @@
 		4B18D958299EA7A3005DE92B /* NewsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B18D957299EA7A3005DE92B /* NewsDetailViewController.swift */; };
 		4B18D95D299EA8E0005DE92B /* NewsAPIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B18D95A299EA8E0005DE92B /* NewsAPIEndpoint.swift */; };
 		4B18D95E299EA8E0005DE92B /* NewsAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B18D95B299EA8E0005DE92B /* NewsAPIError.swift */; };
-		4B18D961299EA8EB005DE92B /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B18D95F299EA8EB005DE92B /* ArticleViewModel.swift */; };
 		4B18D962299EA8EB005DE92B /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B18D960299EA8EB005DE92B /* Article.swift */; };
+		4B58A6A229A4221A007995CD /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B58A6A129A4221A007995CD /* ArticleViewModel.swift */; };
 		4B6AC5A629A1A6A8009CE7D9 /* NewsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6AC5A529A1A6A8009CE7D9 /* NewsListTableViewCell.swift */; };
 		4B9027F029A2996100B4DBC1 /* NewsAPINetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9027EF29A2996100B4DBC1 /* NewsAPINetworkService.swift */; };
 		4B9027F229A2997900B4DBC1 /* NewsAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9027F129A2997900B4DBC1 /* NewsAPIService.swift */; };
@@ -38,8 +38,8 @@
 		4B18D957299EA7A3005DE92B /* NewsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailViewController.swift; sourceTree = "<group>"; };
 		4B18D95A299EA8E0005DE92B /* NewsAPIEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsAPIEndpoint.swift; sourceTree = "<group>"; };
 		4B18D95B299EA8E0005DE92B /* NewsAPIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsAPIError.swift; sourceTree = "<group>"; };
-		4B18D95F299EA8EB005DE92B /* ArticleViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
 		4B18D960299EA8EB005DE92B /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		4B58A6A129A4221A007995CD /* ArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
 		4B6AC5A529A1A6A8009CE7D9 /* NewsListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListTableViewCell.swift; sourceTree = "<group>"; };
 		4B9027EF29A2996100B4DBC1 /* NewsAPINetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAPINetworkService.swift; sourceTree = "<group>"; };
 		4B9027F129A2997900B4DBC1 /* NewsAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAPIService.swift; sourceTree = "<group>"; };
@@ -96,7 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				4B18D960299EA8EB005DE92B /* Article.swift */,
-				4B18D95F299EA8EB005DE92B /* ArticleViewModel.swift */,
+				4B58A6A129A4221A007995CD /* ArticleViewModel.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -303,10 +303,10 @@
 				4BBDA778299EC22B00444D3E /* NewsListRouter.swift in Sources */,
 				4B0067262998601700A6FDF6 /* ImageLoader.swift in Sources */,
 				4BEAC2F8299815E6003334E8 /* SceneDelegate.swift in Sources */,
-				4B18D961299EA8EB005DE92B /* ArticleViewModel.swift in Sources */,
 				4B18D962299EA8EB005DE92B /* Article.swift in Sources */,
 				4BBDA774299EBED700444D3E /* NewsListInteractor.swift in Sources */,
 				4B18D95D299EA8E0005DE92B /* NewsAPIEndpoint.swift in Sources */,
+				4B58A6A229A4221A007995CD /* ArticleViewModel.swift in Sources */,
 				4B18D95E299EA8E0005DE92B /* NewsAPIError.swift in Sources */,
 				4BBDA770299EBE0000444D3E /* NewsListProtocols.swift in Sources */,
 			);

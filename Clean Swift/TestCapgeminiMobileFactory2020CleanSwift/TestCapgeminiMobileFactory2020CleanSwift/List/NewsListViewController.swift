@@ -9,7 +9,7 @@ import UIKit
 import RxCocoa
 import RxSwift
 
-class NewsListViewController: UIViewController {
+final class NewsListViewController: UIViewController {
     
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
