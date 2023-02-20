@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+final class NewsDetailRouter: NewsDetailDataPassing {
+    weak var view: NewsDetailViewController?
+    var dataStore: NewsDetailDataStore?
+}

@@ -68,9 +68,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="imageCellView" destination="9I0-cn-VoR" id="Ck0-hR-aTf"/>
-                                            <outlet property="titleDescription" destination="HfN-D7-atR" id="UZw-GA-zbx"/>
-                                            <outlet property="titleLabel" destination="2MN-jS-Jdl" id="WkV-KX-Gsw"/>
+                                            <outlet property="imageCellView" destination="9I0-cn-VoR" id="FwS-cH-pOa"/>
+                                            <outlet property="titleDescription" destination="HfN-D7-atR" id="Xt2-hc-FHE"/>
+                                            <outlet property="titleLabel" destination="2MN-jS-Jdl" id="wlV-UD-kqa"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

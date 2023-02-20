@@ -40,6 +40,13 @@ final class NewsListViewController: UIViewController {
             }
             .disposed(by: disposeBag)
         
+        searchBar.rx.searchButtonClicked
+            .asDriver(onErrorJustReturn: ())
+            .drive(onNext: { [weak self] _ in
+                self?.searchBar.resignFirstResponder()
+            })
+            .disposed(by: disposeBag)
+        
         // Les cellules une fois les données récupérées. L'actualisation est automatique et asynchrone.
         articles.bind(to: tableView.rx.items(cellIdentifier: "newsCell", cellType: NewsListTableViewCell.self)) { (row, element, cell) in
             cell.configure(with: element)

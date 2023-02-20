@@ -15,7 +15,7 @@ final class NewsListRouter: NewsListRouterProtocol {
         }
         
         let presenter = NewsListPresenter(router: NewsListRouter())
-        let interactor = NewsListInteractor(presenter: presenter, apiService: NewsAPIService())
+        let interactor = NewsListInteractor(presenter: presenter, apiService: NewsAPINetworkService())
         presenter.setInteractor(interactor: interactor)
         listViewController.setPresenter(presenter: presenter)
         

@@ -29,7 +29,7 @@ final class NewsListViewController: UIViewController {
         setBindings()
         
         let presenter = NewsListPresenter(router: NewsListRouter())
-        let interactor = NewsListInteractor(presenter: presenter, apiService: NewsAPIService())
+        let interactor = NewsListInteractor(presenter: presenter, apiService: NewsAPINetworkService())
         presenter.setInteractor(interactor: interactor)
         self.presenter = presenter
         self.presenter?.viewDidLoad(with: self)

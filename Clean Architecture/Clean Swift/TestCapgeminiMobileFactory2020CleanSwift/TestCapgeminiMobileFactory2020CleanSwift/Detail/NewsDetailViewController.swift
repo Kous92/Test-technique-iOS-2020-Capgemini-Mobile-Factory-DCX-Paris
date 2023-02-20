@@ -12,15 +12,17 @@
 
 import UIKit
 
-protocol NewsDetailDisplayLogic: AnyObject {
-    func displaySomething(viewModel: NewsDetail.Something.ViewModel)
-}
-
-class NewsDetailViewController: UIViewController, NewsDetailDisplayLogic {
-    var interactor: NewsDetailBusinessLogic?
-    var router: (NewsDetailRoutingLogic & NewsDetailDataPassing)?
+class NewsDetailViewController: UIViewController {
     
-    // MARK: Object lifecycle
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var articleImageView: UIImageView!
+    @IBOutlet weak var publishDateLabel: UILabel!
+    @IBOutlet weak var authorLabel: UILabel!
+    @IBOutlet weak var contentLabel: UILabel!
+    @IBOutlet weak var sourceLabel: UILabel!
+    
+    private var interactor: NewsDetailBusinessLogic?
+    var router: NewsDetailDataPassing?
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -32,48 +34,47 @@ class NewsDetailViewController: UIViewController, NewsDetailDisplayLogic {
         setup()
     }
     
-    // MARK: Setup
-    
-    private func setup() {
-        let viewController = self
-        let interactor = NewsDetailInteractor()
-        let presenter = NewsDetailPresenter()
-        let router = NewsDetailRouter()
-        viewController.interactor = interactor
-        viewController.router = router
-        interactor.presenter = presenter
-        presenter.viewController = viewController
-        router.viewController = viewController
-        router.dataStore = interactor
-    }
-    
-    // MARK: Routing
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let scene = segue.identifier {
-            let selector = NSSelectorFromString("routeTo\(scene)WithSegue:")
-            if let router = router, router.responds(to: selector) {
-                router.perform(selector, with: segue)
-            }
-        }
-    }
-    
     // MARK: View lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        doSomething()
+        retrievePassedArticle()
     }
     
-    // MARK: Do something
-    
-    //@IBOutlet weak var nameTextField: UITextField!
-    
-    func doSomething() {
-        let request = NewsDetail.Something.Request()
-        interactor?.doSomething(request: request)
+    // Mise en place des composants de Clean Swift
+    private func setup() {
+        let interactor = NewsDetailInteractor()
+        let presenter = NewsDetailPresenter()
+        let router = NewsDetailRouter()
+        self.interactor = interactor
+        self.router = router
+        interactor.presenter = presenter
+        presenter.view = self
+        router.view = self
+        router.dataStore = interactor
     }
     
-    func displaySomething(viewModel: NewsDetail.Something.ViewModel) {
-        //nameTextField.text = viewModel.name
+    private func retrievePassedArticle() {
+        interactor?.getPassedArticle(request: NewsDetail.ArticleDetails.Request())
+    }
+}
+
+extension NewsDetailViewController: NewsDetailDisplayLogic {
+    func displayArticle(with viewModel: NewsDetail.ArticleDetails.ViewModel) {
+        print("Article affiché: \(viewModel)")
+        // Ombre sur le texte, pour une meilleure lisibilité
+        titleLabel.layer.shadowOpacity = 0.8
+        titleLabel.layer.shadowRadius = 5
+        titleLabel.layer.shadowColor = CGColor(red: 0, green: 0, blue: 0, alpha: 1)
+        publishDateLabel.layer.shadowOpacity = 0.8
+        publishDateLabel.layer.shadowRadius = 5
+        publishDateLabel.layer.shadowColor = CGColor(red: 0, green: 0, blue: 0, alpha: 1)
+        
+        // Le contenu depuis la vue modèle
+        titleLabel.text = viewModel.title
+        publishDateLabel.text = viewModel.publishedAt
+        authorLabel.text = viewModel.author
+        sourceLabel.text = viewModel.source
+        contentLabel.text = viewModel.content
+        articleImageView.loadImage(with: viewModel.urlToImage)
     }
 }
