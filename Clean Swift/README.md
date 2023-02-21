@@ -229,3 +229,5 @@ func navigateToArticleDetailView(source: NewsListViewController, destination: Ne
     + **Onboarding projet (très) difficile**, la logique de l'application en **Clean Architecture** nécessite un temps d'adaptation beaucoup plus long pour être opérationnel, même si le développeur concerné est expérimenté.
     + **Gestion des rétentions de cycle.** Risque accru de **memory leak** lorsqu'un `ViewController` est détruit. **ATTENTION AUSSI, gestion complexe des références** lors de l'initialisation du `ViewController` (particulièrement des `DataStore` entre `Interactor` et `Router`)
     + Compatibilité complexe avec **SwiftUI**, les vues étant de type valeur (dans des `struct`), le concept ici nécessitant des types références (donc des `class`).
+
+## Ma solution

@@ -26,7 +26,7 @@ L'architecture **MVC** a déjà un énorme point faible, sa testabilité. En eff
 
 Le second problème est sa maintenabilité, du fait que lorsque le projet devient plus grand et complexe, le `ViewController` devient alors massif. D'où la seconde signification de **MVC: Massive View Controller**. Du fait qu'il y ait toutes les responsabilités et les dépendances, la maintenance devient plus compliquée (au risque de tout casser). Et le 1er principe du **SOLID** de la responsabilité unique **(S: Single Responsibility Principle)** est absolument impossible à respecter.
 
-Aujourd'hui, l'écrasante majorité des projets iOS en entreprise avec **UIKit** ne se font pas avec **MVC**.
+Aujourd'hui, l'écrasante majorité des projets iOS en entreprise avec **UIKit** ne se font pas avec **MVC**. La transition vers l'architecture **MVVM** se fera tout naturellement pour isoler les responsabilités de la logique métier.
 
 ## Ma solution
 
