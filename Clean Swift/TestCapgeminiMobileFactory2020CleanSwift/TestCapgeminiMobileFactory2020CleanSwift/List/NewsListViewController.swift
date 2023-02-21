@@ -14,6 +14,11 @@ final class NewsListViewController: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     
+    /* Partie RxSwift:
+    - PublishSubject: un sujet (Subject) faisant office d'émetteur (Observer) et de récepteur (Observable, abonné). Avec .onNext(), on émet une valeur. Particularité de ce type de sujet: démarre sans valeur et émet seulement des nouveaux éléments aux abonnés.
+       -> La partie qui va s'abonner au sujet recevra la valeur avec .subscribe(onNext: { value in })
+    - DisposeBag: Utilisé pour éviter les memory leaks, elle stocke les Disposables de chaque abonnement. Cela facilite la gestion des abonnements.
+    */
     private let disposeBag = DisposeBag()
     private let articles = PublishSubject<[NewsList.ViewModel.NewsViewModel]>()
     private let error = PublishSubject<NewsList.ViewModel.Error>()

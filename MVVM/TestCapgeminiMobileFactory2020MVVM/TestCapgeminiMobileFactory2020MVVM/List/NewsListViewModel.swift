@@ -12,14 +12,13 @@ final class NewsListViewModel {
     /* Partie RxSwift:
      - PublishSubject: un sujet (Subject) faisant office d'émetteur (Observer) et de récepteur (Observable, abonné). Avec .onNext(), on émet une valeur. Particularité de ce type de sujet: démarre sans valeur et émet seulement des nouveaux éléments aux abonnés.
        -> La partie qui va s'abonner au sujet recevra la valeur avec .subscribe(onNext: { value in })
-     - DisposeBag:
     */
-    private let disposeBag = DisposeBag()
     let articles = PublishSubject<[ArticleViewModel]>()
     let error = PublishSubject<NewsAPIError>()
     
     private let apiService: NewsAPIService?
     
+    // Grâce à une injection de dépendance par le biais d'un type abstrait, la testabilité sera assurée si on utilise un mock pour le worker.
     init(apiService: NewsAPIService) {
         self.apiService = apiService
     }

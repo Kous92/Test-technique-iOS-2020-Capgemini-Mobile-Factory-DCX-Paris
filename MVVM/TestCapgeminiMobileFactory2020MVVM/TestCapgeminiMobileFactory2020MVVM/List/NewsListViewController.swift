@@ -14,8 +14,11 @@ class NewsListViewController: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     
+    /* Partie RxSwift
+    - DisposeBag: Utilisé pour éviter les memory leaks, elle stocke les Disposables de chaque abonnement. Cela facilite la gestion des abonnements
+     */
     private let disposeBag = DisposeBag()
-    private let viewModel = NewsListViewModel(apiService: NewsAPIService())
+    private let viewModel = NewsListViewModel(apiService: NewsAPINetworkService())
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +36,13 @@ class NewsListViewController: UIViewController {
             .subscribe { [weak self] query in
                 self?.viewModel.searchNews(with: query)
             }
+            .disposed(by: disposeBag)
+        
+        searchBar.rx.searchButtonClicked
+            .asDriver(onErrorJustReturn: ())
+            .drive(onNext: { [weak self] _ in
+                self?.searchBar.resignFirstResponder()
+            })
             .disposed(by: disposeBag)
         
         // Les cellules une fois les données récupérées. L'actualisation est automatique et asynchrone.

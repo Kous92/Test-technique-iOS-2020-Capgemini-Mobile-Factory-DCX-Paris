@@ -32,6 +32,6 @@ final class NewsListRouter: NewsListRoutingLogic, NewsListDataPassing {
     }
     
     func passDataToArticleDetailView(source: NewsListDataStore, destination: inout NewsDetailDataStore, at indexPath: IndexPath) {
-        destination.article = dataStore?.articles[indexPath.row]
+        destination.article = source.articles[indexPath.row]
     }
 }
