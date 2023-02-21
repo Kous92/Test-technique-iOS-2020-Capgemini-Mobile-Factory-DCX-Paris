@@ -34,7 +34,7 @@ Principaux avantages:
 
 Inconvénients:
 - Les `Presenter` peuvent devenir massifs notamment dans des projets de très grande taille. Il est donc difficile de respecter l'ensemble des principes du **SOLID** et particulièrement le premier étant le principe de responsabilité unique (**SRP: Single Responsibility Principle**). La variante **MVP+C** qui utilise un `Coordinator` s'avère utile pour alléger les vues et gérer la navigation entre vues.
-- Compréhension et maîtrise compliquée pour les débutants, notamment du fait qu'il y a plusieurs façons de faire pour implémenter cette architecture, menant à des confusions et à des doutes.
+- Compréhension et maîtrise potentiellement compliquée pour les débutants, notamment du fait qu'il y a plusieurs façons de faire pour implémenter cette architecture, menant à des confusions et à des doutes.
 - Complexité accrue avec davantage de code.
 - Pour les grands projets, les `Presenter` peuvent devenir massifs.
 - Gestion des rétentions de cycle.

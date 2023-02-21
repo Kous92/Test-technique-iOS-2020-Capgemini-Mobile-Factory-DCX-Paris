@@ -5,11 +5,11 @@
 - [Introduction](#introduction)
 - [Sujet](#subject)
 - [Ma solution](#mysolution)
-    + [Architecture MVC](https://github.com/Kous92/Test-technique-iOS-2020-Capgemini-Mobile-Factory-DCX-Paris/tree/main/MVC)
-    + [Architecture MVVM](https://github.com/Kous92/Test-technique-iOS-2020-Capgemini-Mobile-Factory-DCX-Paris/tree/main/MVVM)
-    + [Architecture MVP](https://github.com/Kous92/Test-technique-iOS-2020-Capgemini-Mobile-Factory-DCX-Paris/tree/main/MVP)
-    + [Architecture VIPER](https://github.com/Kous92/Test-technique-iOS-2020-Capgemini-Mobile-Factory-DCX-Paris/tree/main/VIPER)
-    + [Clean Architecture (VIP): Clean Swift](https://github.com/Kous92/Test-technique-iOS-2020-Capgemini-Mobile-Factory-DCX-Paris/tree/main/Clean%20Swift)
+    + [Architecture MVC](MVC/README.md)
+    + [Architecture MVVM](MVVM/README.md)
+    + [Architecture MVP](MVP/README.md)
+    + [Architecture VIPER](VIPER/README.md)
+    + [Clean Architecture (VIP): Clean Swift](Clean%20Swift/README.md)
     
 
 ## <a name="introduction"></a>Introduction
