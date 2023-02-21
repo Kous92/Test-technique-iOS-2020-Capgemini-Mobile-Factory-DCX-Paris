@@ -18,6 +18,7 @@ final class NewsListPresenter {
     // Référence avec la vue, attention à la rétention de cycle (memory leak)
     weak private var delegate: NewsListViewDelegate?
     
+    // Grâce à une injection de dépendance par le biais d'un type abstrait, la testabilité sera assurée si on utilise un mock pour simuler les appels d'API REST.
     init(apiService: NewsAPIService) {
         self.apiService = apiService
     }

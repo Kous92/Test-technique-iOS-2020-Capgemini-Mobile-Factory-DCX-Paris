@@ -43,7 +43,7 @@ En partant du **MVC**, la vue et le contrôleur (`ViewController`) ne font déso
 
 Pour l'exemple en **MVVM**, je peux donc isoler `NewsListViewController` de la logique métier. J'utilise donc le concept clé du **MVVM** qui est `NewsViewModel` qui va contenir toute cette logique métier. `RxSwift` étant extrêmement populaire avec l'architecture **MVVM**, on y effectuera donc le data binding du `ViewModel` vers le `ViewController`, avec un `PublishSubject` où on y émettra par le biais d'un flux asynchrone les données pour mettre à jour la vue, `NewsViewModel` contiendra donc les émétteurs d'événements.
 
-De plus, le `ViewModel` permettant ainsi de mieux tester la logique métier, j'utiliserai donc ici une injection de dépendance pour la récupération de données, avec une abstraction. Si j'effectue des tests unitaires, je fournirai donc un mock pour simuler les appels API, sinon dans l'appli je fournis une instance gérant les appels réseau.
+De plus, le `ViewModel` permettant ainsi de mieux tester la logique métier, j'utiliserai donc ici une injection de dépendance pour la récupération de données, avec une abstraction. Si j'effectue des tests unitaires avec `XCTest`, je fournirai donc un mock pour simuler les appels API, sinon dans l'appli je fournis une instance gérant les appels réseau.
 
 ```swift
 final class NewsListViewModel {
@@ -56,7 +56,7 @@ final class NewsListViewModel {
     
     private let apiService: NewsAPIService?
     
-    // Grâce à une injection de dépendance par le biais d'un type abstrait, la testabilité sera assurée si on utilise un mock pour le worker.
+    // Grâce à une injection de dépendance par le biais d'un type abstrait, la testabilité sera assurée si on utilise un mock pour simuler les appels d'API REST.
     init(apiService: NewsAPIService) {
         self.apiService = apiService
     }
@@ -175,7 +175,7 @@ final class NewsListViewController: UIViewController {
 Pour terminer, le `ViewModel` peut aussi avoir comme simple responsabilité d'avoir des données formatées prêtes à afficher par la vue, c'est donc ici ce je mets en place avec `ArticleViewModel`. Je m'assure donc ainsi que `NewsListViewController` n'ait aucune connaissance du modèle, ici `Article`. `ArticleViewModel` pourra être utilisé dans chaque `TableViewCell` du `TableView`, mais aussi dans la vue détail.
 
 ```swift
-final struct ArticleViewModel {
+struct ArticleViewModel {
     let source: String
     let author: String
     let title: String

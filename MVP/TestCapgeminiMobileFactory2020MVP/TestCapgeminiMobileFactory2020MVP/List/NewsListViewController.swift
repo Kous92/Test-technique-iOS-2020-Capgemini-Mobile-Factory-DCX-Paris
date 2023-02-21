@@ -9,7 +9,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class NewsListViewController: UIViewController {
+final class NewsListViewController: UIViewController {
     
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
@@ -19,7 +19,7 @@ class NewsListViewController: UIViewController {
     private let error = PublishSubject<String>()
     
     // Référence circulaire. Forte de la vue avec le présentateur, faible du présentateur vers la vue.
-    private lazy var presenter = NewsListPresenter(apiService: NewsAPIService())
+    private lazy var presenter = NewsListPresenter(apiService: NewsAPINetworkService())
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,6 +39,13 @@ class NewsListViewController: UIViewController {
             }
             .disposed(by: disposeBag)
         
+        searchBar.rx.searchButtonClicked
+            .asDriver(onErrorJustReturn: ())
+            .drive(onNext: { [weak self] _ in
+                self?.searchBar.resignFirstResponder()
+            })
+            .disposed(by: disposeBag)
+        
         // Les cellules une fois les données récupérées. L'actualisation est automatique et asynchrone.
         articles.bind(to: tableView.rx.items(cellIdentifier: "newsCell", cellType: NewsListTableViewCell.self)) { (row, element, cell) in
             cell.configure(with: element)
@@ -56,11 +63,11 @@ class NewsListViewController: UIViewController {
             .observe(on: MainScheduler.instance)
             .subscribe(onNext: { [weak self] error in
                 let alert = UIAlertController(title: "Erreur", message: error, preferredStyle: .alert)
-
+                
                 alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { _ in
-                     print("OK")
+                    print("OK")
                 }))
-
+                
                 self?.present(alert, animated: true, completion: nil)
             })
             .disposed(by: disposeBag)

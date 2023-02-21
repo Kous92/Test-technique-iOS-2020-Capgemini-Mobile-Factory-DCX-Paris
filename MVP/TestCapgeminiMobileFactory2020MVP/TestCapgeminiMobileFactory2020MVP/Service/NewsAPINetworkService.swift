@@ -1,6 +1,6 @@
 //
 //  NewsAPINetworkService.swift
-//  TestCapgeminiMobileFactory2020MVVM
+//  TestCapgeminiMobileFactory2020MVP
 //
 //  Created by Koussaïla Ben Mamar on 21/02/2023.
 //

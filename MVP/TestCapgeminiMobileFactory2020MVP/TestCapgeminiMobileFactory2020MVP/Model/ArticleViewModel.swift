@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class ArticleViewModel {
+struct ArticleViewModel {
     let source: String
     let author: String
     let title: String
