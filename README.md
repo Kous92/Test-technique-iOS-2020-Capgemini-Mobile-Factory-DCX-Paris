@@ -10,8 +10,8 @@
     + [Architecture MVP](MVP/README.md)
     + [Architecture VIPER](VIPER/README.md)
     + [Clean Architecture (VIP): Clean Swift](Clean%20Swift/README.md)
+- [Glossaire des différents principes](#glossary)
     
-
 ## <a name="introduction"></a>Introduction
 
 Ici un test technique que j'ai réalisé lors de mon stage de fin d'études en 2020, au sein de Capgemini, à Paris, plus précisément à Issy-les-Moulineaux. 
@@ -24,7 +24,7 @@ Je n'avais fait ce test qu'avec l'architecture **MVC** à l'époque. L'architect
 
 Pour information, c'est aussi de ce test technique que j'ai eu l'inspiration de mon projet personnel qu'est [SuperNews](https://github.com/Kous92/SuperNews-iOS-Swift5).
 
-Aujourd'hui en 2023, avec le recul et tout ce que j'ai appris, je vous montre maintenant mes différentes implémentations avec les architectures qu'on utilise en iOS, ici **MVC**, **MVVM**, **MVP**, **VIPER** et **Clean (ici Clean Swift)**. Le tout avec une analyse qui prend en compte des principes du **software craftsmanship**: **SOLID**, principes de Clean Code (**KISS**, **DRY**, **YAGNI**, ...)
+Aujourd'hui en 2023, avec le recul et tout ce que j'ai appris, je vous montre maintenant mes différentes implémentations avec les architectures qu'on utilise en iOS, ici **MVC**, **MVVM**, **MVP**, **VIPER** et **Clean (ici Clean Swift)**. Le tout avec une analyse qui prend en compte des principes du **Software Craftsmanship**: **SOLID**, principes de Clean Code (**KISS**, **DRY**, **YAGNI**, ...)
 
 J'invite tout développeur iOS junior et débutant à s'exercer en effectuant ce test. Pour les implémentations d'architectures, je vous recommande de cheminer comme ceci:
 1) MVC
@@ -310,3 +310,26 @@ extension UIImageView {
     }
 }
 ```
+    
+## <a name="glossary"></a>Glossaire des différents termes et principes
+
+- **Software Craftsmanship**: État d'esprit du développeur définissant la volonté de faire son métier de manière artisanale et qualitative. Ici, cela consiste à aller au-delà d'une application qui répond aux besoins du client, c'est de faire une application de la plus haute qualité possible aussi bien au niveau interface qu'au niveau du code. Au niveau du code, c'est faire un code facile à lire et comprendre, facile à maintenir, facile à tester et de manière optimale, afin que l'application soit plus performante et avec le moins de bugs possibles.
+- **Clean Code**: Pratique qui vise à produire un code lisible, compréhensible, intuitif et facile à manipuler. Il est très facile à entretenir (maintenir), et n’est pas dépendant de son développeur initial. Ce qui revient à dire que le code ainsi produit est immédiatement intelligible par n’importe quel développeur qualifié.
+- **KISS (Keep It Simple Stupid)**: Ce principe a pour but de garder un code aussi simple que possible et que toute complexité inutile doit être évitée.
+- **DRY (Don't Repeat Yourself**): Ce principe a pour but d'éviter les redondances (répétitions) superflues de code au sein d'une application.
+- **YAGNI (You Ain't Gonna Need It)**: Ce principe a pour but d'ajouter des fonctionnalités supplémentaires au code actuel lorsqu'elles sont réellement nécessaires. L'idée ici est de ne pas laisser la moindre fonction, classe, structure, instruction qui ne sera pas utilisée dans le code, même si c'est "au cas où".
+- **SOLID**: Acronyme réprésentant un ensemble de 5 principes de base en programmation orientée objet. Ces principes ont pour but d'écrire un code propre, maintenable et extensible.
+- **MVC**: Model View Controller
+- **MVVM**: Model View View Model
+- **MVP**: Model View Presenter
+- **VIPER**: View Interactor Presenter Entity Router
+- **VIP**: View Interactor Presenter
+
+### Les principes du SOLID
+
+L'acronyme **SOLID** représente 5 pratiques, ci-dessous:
+- **S (Single Responsibility Principle)**: Principe de responsabilité unique. Chaque classe et méthode ne doit avoir qu'une et une seule responsabilité. En développement iOS, ce principe est l'un des plus difficiles à respecter et influe fortement sur le choix de l'architecture et des design patterns à utiliser.
+- **O (Open Closed Principle)**: Principe ouvert/fermé. Toute entité doit être ouverte à l'extension mais fermée à la modification.
+- **L (Liskov Substitution Principle)**: Principe de substitution de Liskov. Tout type de base doit pouvoir être remplacé par l'un de des sous-types.
+- **I (Interface Segregation Principle)**: Principe de ségrégation d'interface. Aucune entité ne devrait être forcé d'implémenter des méthodes qu'il n'utilise pas.
+- **D (Dependency Inversion Principle)**: Principer d'inversion de dépenances. Une classe doit dépendre de son abstraction et non de son implémentation.
